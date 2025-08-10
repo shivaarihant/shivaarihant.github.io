@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shiva Angerekula</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+:root {
+    --primary: #0077b5;
+    --light-bg: #f5f6fa;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: white;
+    color: #333;
+    scroll-behavior: smooth;
+}
+header {
+    background: linear-gradient(90deg, #0077b5, #00aaff);
+    color: white;
+    padding: 1.5rem 1rem; /* Reduced padding */
+    text-align: center;
+}
+header h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+header p {
+    max-width: 700px;
+    margin: auto;
+}
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem; /* Reduced padding */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    font-weight: bold;
+}
+.nav-left img {
+    width: 20px;
+    height: 20px;
+}
+.nav-right a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+.nav-right a:hover {
+    color: var(--primary);
+}
+section {
+    padding: 30px 20px; /* Reduced padding */
+    max-width: 1100px;
+    margin: auto;
+}
+section h2 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem; /* Reduced gap */
+}
+.skill-card {
+    background: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 8px; /* Reduced padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.skill-card img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Experience scroll */
+.experience-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 0.8rem; /* Reduced gap */
+    scroll-behavior: smooth;
+    padding-bottom: 8px; /* Reduced padding */
+}
+.experience-card {
+    flex: 0 0 auto;
+    width: 250px;
+    background: white;
+    border-radius: 12px;
+    padding: 0.8rem; /* Reduced padding */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+.experience-card.latest {
+    border: 2px solid #00d4ff;
+}
+.logo-chip {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+}
+.logo-chip img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Contact */
+.social-links {
+    display: flex;
+    gap: 0.8rem; /* Reduced gap */
+    justify-content: center;
+}
+.fab-link {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease;
+}
+.fab-link:hover { transform: scale(1.1); }
+.linkedin { background: #0077B5; }
+.email { background: #D44638; }
+.instagram { background: #E1306C; }
+.fab-link img { width: 22px; filter: brightness(0) invert(1); }
+
+/* Dark mode */
+body.dark {
+    background: #121212;
+    color: #f0f0f0;
+}
+body.dark nav { background: #1f1f1f; }
+body.dark .skill-card,
+body.dark .experience-card {
+    background: #1e1e1e;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-left">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        <a href="https://www.linkedin.com/in/shiva-angeri/" target="_blank" style="color:#0077b5; text-decoration:none;">Shiva Angerekula</a>
+    </div>
+    <div class="nav-right">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+<style>
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 2rem;
+    }
+    nav div {
+        display: flex;
+        align-items: center;
+    }
+    nav a {
+        margin-left: 1rem;
+    }
+    @media (max-width: 600px) {
+        nav {
+            flex-direction: column;
+        }
+        nav div {
+            width: 100%;
+        }
+        nav a {
+            margin: 0.5rem 0;
+        }
+    }
+</style>
+
+<header id="home">
+    <h1><img src="https://icons.iconarchive.com/icons/google/noto-emoji-people-bodyparts/128/12050-waving-hand-icon.png" alt="hello icon" style="width: 30px; height: 30px; margin-right: 10px;"> Hi, I'm Shiva, a passionate Java developer and cloud enthusiast.</h1>
+    <p class="typing-animation"></p>
+    <script>
+        const text = "Designing and delivering scalable, reliable, cloud-native solutions with Java, Spring Boot, AWS, and microservices."
+        const letters = text.split("");
+        let index = 0;
+        const interval = setInterval(() => {
+            document.querySelector(".typing-animation").textContent += letters[index];
+            if (index === letters.length - 1) clearInterval(interval);
+            index++;
+        }, 50);
+    </script>
+</header>
+
+<section id="about">
+    <h2><i class="fas fa-user-circle"></i> About Me</h2>
+    <p>Java Developer with 9+ years of experience in Supply Chain, Banking and HealthCare domains. Skilled in designing and deploying cloud-based applications using Java, Spring Boot, AWS, and Microservices architecture.</p>
+</section>
+
+<section id="skills">
+    <h2><i class="fas fa-laptop-code"></i> Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><p>Java</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"><p>Spring Boot</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"><p>AWS</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"><p>Docker</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"><p>Kubernetes</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"><p>SQL</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"><p>NoSQL</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><p>Git</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"><p>JavaScript</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><p>Python</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"><p>Jenkins</p></div>
+        <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"><p>IAC</p></div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    <div class="experience-container">
+        <div class="experience-card latest">
+            <div class="logo-chip"><a href="https://www.persistent.com/" target="_blank"><img src="https://logo.clearbit.com/persistent.com"></a></div>
+            <div><h3><a href="https://www.persistent.com/" target="_blank">Persistent Systems</a></h3><p>Senior Engineering Lead (Feb 2023-Present)</p></div>
+        </div>
+        <div class="experience-card">
+            <div class="logo-chip"><a href="https://www.levadata.com/" target="_blank"><img src="https://logo.clearbit.com/levadata.com"></a></div>
+            <div><h3><a href="https://www.levadata.com/" target="_blank">LevaData</a></h3><p>Senior Software Engineer (Jan 2021– Feb 2023)</p></div>
+        </div>
+        <div class="experience-card">
+            <div class="logo-chip"><a href="https://www.synchrony.com/" target="_blank"><img src="https://cdn.brandfetch.io/idYeh3iJYs/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1748412919237"></a></div>
+            <div><h3><a href="https://www.synchrony.com/" target="_blank">Synchrony</a></h3><p>IT Developer (Jan 2019– Jan 2021)</p></div>
+        </div>
+        <div class="experience-card">
+            <div class="logo-chip"><a href="https://www.mindtree.com/" target="_blank"><img src="https://logo.clearbit.com/mindtree.com"></a></div>
+            <div><h3><a href="https://www.mindtree.com/" target="_blank">Mindtree</a></h3><p>Software Engineer (July 2016– Jan 2019)</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2><i class="fas fa-paper-plane"></i> Let's Connect</h2>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/shiva-angeri/" target="_blank" class="fab-link linkedin">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png">
+        </a>
+        <a href="mailto:shivaangerikula78@example.com" class="fab-link email">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968534.png">
+        </a>
+        <a href="https://www.instagram.com/shiva_angirekula/" target="_blank" class="fab-link instagram">
+            <i class="fab fa-instagram" style="font-size:22px; color:white;"></i>
+        </a>
+    </div>
+</section>
+
+<script>
+// Dark mode toggle with 'd' key
+document.addEventListener('keydown', e => {
+    if (e.key.toLowerCase() === 'd') document.body.classList.toggle('dark');
+});
+</script>
+
+</body>
+</html>
+
